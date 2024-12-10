@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CarParkingManager</class>
+ <widget class="QMainWindow" name="CarParkingManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Zarządzanie Parkingiem Samochodowym</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="ENTRYBUTTON">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>350</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zarejestruj Wjazd</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 26px; background-color: #4CAF50; color: white; border-radius: 10px; padding: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EXITBUTTON">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>170</y>
+      <width>350</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zarejestruj Wyjazd</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 26px; background-color: #f44336; color: white; border-radius: 10px; padding: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadImageButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>290</y>
+      <width>350</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wczytaj Obraz</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 26px; background-color: #2196F3; color: white; border-radius: 10px; padding: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imagePreview">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>750</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="styleSheet">
+     <string>border: 3px solid #cccccc; border-radius: 10px; background-color: #f9f9f9;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxRejestracja">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>400</y>
+      <width>350</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 20px; padding: 5px; border: 2px solid #cccccc; border-radius: 5px; background-color: white;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>470</y>
+      <width>1150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Witaj! Wybierz operację.</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 20px; color: #333333; font-weight: bold; padding-left: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelEntryTime">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>530</y>
+      <width>1150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Godzina wjazdu: -</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 20px; color: #333333; font-weight: bold; padding-left: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelExitTime">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>590</y>
+      <width>1150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Godzina wyjazdu: -</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 20px; color: #333333; font-weight: bold; padding-left: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCost">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>650</y>
+      <width>1150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koszt: -</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 20px; color: #333333; font-weight: bold; padding-left: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="miejscaParkingoweWidget">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>400</y>
+      <width>750</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="ukladMiejscParkingowych">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="s1">
+       <property name="text">
+        <string>M1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="s2">
+       <property name="text">
+        <string>M2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="s3">
+       <property name="text">
+        <string>M3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="s4">
+       <property name="text">
+        <string>M4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="s5">
+       <property name="text">
+        <string>M5</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
